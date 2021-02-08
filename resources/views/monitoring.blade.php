@@ -43,10 +43,10 @@ $('document').ready(function () {
  function getRealData() {
    $.ajax({
             type:'get',
-            url:'/monitoring/x/',
+            url:'/monitoring/x',
             dataType: "json",
             success:function(response){
-              if (response.data==0) {
+              if (response=="kosong") {
 
                  var img = document.getElementById("kursi7");
                  img.src="{{asset('/assets/images/kursi.jpg')}}";
