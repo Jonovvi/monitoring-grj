@@ -19,15 +19,20 @@ class MonitoringController extends Controller
     {
       // $x=$_GET['x'];
       $x=$req->get('x');
-
-
-      $yap = Kursi::create([
-        'data' =>$y,
-        'waktu' => 1,
-        'tanggal' => 1,
-        'jam' => 1
-      ]);
-      return response()->json($yap);
+      if ($x==1) {
+        // code...
+        $yap = Kursi::create([
+          'data' =>$y,
+          'waktu' => 1,
+          'tanggal' => 1,
+          'jam' => 1
+        ]);
+        return response()->json($yap);
+      } else {
+        // code...
+        $yap = "kosong";
+        return response()->json($yap);
+      }
     }
 
 

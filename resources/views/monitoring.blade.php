@@ -34,7 +34,7 @@
 
 @section('script')
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 $('document').ready(function () {
  setInterval(function () {getRealData()}, 1000);//request every x seconds
 
@@ -60,7 +60,7 @@ $('document').ready(function () {
             }
             });
  }
-</script> -->
+</script>
 
 
 <script type="text/javascript">
