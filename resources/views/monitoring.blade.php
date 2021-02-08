@@ -43,7 +43,7 @@ $('document').ready(function () {
  function getRealData() {
    $.ajax({
             type:'get',
-            url:'http://127.0.0.1:8000/monitoring/x/',
+            url:'monitoringgrj.top/monitoring/x/',
             dataType: "json",
             success:function(response){
               if (response.data==0) {
