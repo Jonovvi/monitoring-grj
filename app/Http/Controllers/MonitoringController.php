@@ -16,8 +16,8 @@ class MonitoringController extends Controller
     public function data(Request $req, $x)
     {
 
-      $x=$req->get('x');
-      return response()->json($req->get('x'));
+      // $x=$req->get('x');
+      return response()->json($_GET['x']);
       // if ($x==1) {
       //   // code...
       //   // $yap = Kursi::update(['id',1],[

@@ -43,15 +43,15 @@ $('document').ready(function () {
  function getRealData() {
    $.ajax({
             type:'get',
-            url:'/monitoring/x',
+            url:'http://monitoringgrj.top/monitoring/x?x=',
             dataType: "json",
             success:function(response){
-              if (response=="kosong") {
+              if (response=="0") {
 
                  var img = document.getElementById("kursi7");
                  img.src="{{asset('/assets/images/kursi.jpg')}}";
-                document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
-                console.log(response);
+                 document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
+                 console.log(response);
               }else {
                 // location.reload();
                 var img = document.getElementById("kursi7");
