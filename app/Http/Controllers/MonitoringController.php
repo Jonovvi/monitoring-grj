@@ -8,25 +8,24 @@ class MonitoringController extends Controller
 {
     public function index(Request $req)
     {
-      $x=$req->get('x');
-      $start = $req->get('x');
-      $kursiku = Kursi::where('id',7)->first();
-      return view('monitoring', compact('kursiku','x','start'));
+      $kursiku = Kursi::where('id',1)->first();
+      return view('monitoring', compact('kursiku'));
     }
 
 
     public function data(Request $req)
     {
-      // $x=$_GET['x'];
+
       $x=$req->get('x');
       if ($x==1) {
         // code...
-        $yap = Kursi::create([
-          'data' =>$y,
-          'waktu' => 1,
-          'tanggal' => 1,
-          'jam' => 1
-        ]);
+        // $yap = Kursi::update(['id',1],[
+        //   'data' =>$y,
+        //   'waktu' => 1,
+        //   'tanggal' => 1,
+        //   'jam' => 1
+        // ]);
+        $yap = "ADA ORANG";
         return response()->json($yap);
       } else {
         // code...
