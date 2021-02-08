@@ -25,6 +25,7 @@
                   <p></p>
                   <p id="waktu"></p>
                   <p id="jam"></p>
+                  <input type="hidden" name="hm" id="hm" value="{{$req->get('x')}}">
               </div>
         </div>
       </section>
@@ -41,9 +42,10 @@ $('document').ready(function () {
  });
 
  function getRealData() {
+   var a=document.getElementById("hm").value;
    $.ajax({
             type:'get',
-            url:'http://monitoringgrj.top/monitoring/x',
+            url:'http://monitoringgrj.top/monitoring/x'+a,
             dataType: "json",
             success:function(response){
               if (response=="0") {
