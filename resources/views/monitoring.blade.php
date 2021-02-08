@@ -44,26 +44,26 @@ $('document').ready(function () {
  function getRealData() {
    var a=document.getElementById("hm").value;
    console.log(a);
-   // $.ajax({
-   //          type:'get',
-   //          url:'http://monitoringgrj.top/monitoring/x'+a,
-   //          dataType: "json",
-   //          success:function(response){
-   //            if (response=="0") {
-   //
-   //               var img = document.getElementById("kursi7");
-   //               img.src="{{asset('/assets/images/kursi.jpg')}}";
-   //               document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
-   //               console.log(response);
-   //            }else {
-   //              // location.reload();
-   //              var img = document.getElementById("kursi7");
-   //              img.src="{{asset('/assets/images/kursi_booked.jpg')}}";
-   //              document.getElementById('lokasi'+1).innerHTML=("ADA ORANG");
-   //              console.log(response);
-   //            }
-   //          }
-   //          });
+   $.ajax({
+            type:'get',
+            url:'http://monitoringgrj.top/monitoring/x'+a,
+            dataType: "json",
+            success:function(response){
+              if (response=="0") {
+
+                 var img = document.getElementById("kursi7");
+                 img.src="{{asset('/assets/images/kursi.jpg')}}";
+                 document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
+                 console.log(response);
+              }else {
+                // location.reload();
+                var img = document.getElementById("kursi7");
+                img.src="{{asset('/assets/images/kursi_booked.jpg')}}";
+                document.getElementById('lokasi'+1).innerHTML=("ADA ORANG");
+                console.log(response);
+              }
+            }
+            });
  }
 </script>
 

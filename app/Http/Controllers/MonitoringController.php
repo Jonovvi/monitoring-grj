@@ -17,22 +17,23 @@ class MonitoringController extends Controller
     {
 
       // $x=$req->get('x');
-      return response()->json($req->get('x'));
-      // if ($x==1) {
-      //   // code...
-      //   // $yap = Kursi::update(['id',1],[
-      //   //   'data' =>$y,
-      //   //   'waktu' => 1,
-      //   //   'tanggal' => 1,
-      //   //   'jam' => 1
-      //   // ]);
-      //   $yap = "adaorang";
-      //   return response()->json($yap);
-      // } else {
-      //   // code...
-      //   $yap = "kosong";
-      //   return response()->json($yap);
-      // }
+      $y=$req->hm;
+
+      if ($y == 1) {
+        // code...
+        // $yap = Kursi::update(['id',1],[
+        //   'data' =>$y,
+        //   'waktu' => 1,
+        //   'tanggal' => 1,
+        //   'jam' => 1
+        // ]);
+        $yap = "adaorang";
+        return response()->json($yap);
+      } else {
+        // code...
+        $yap = "kosong";
+        return response()->json($yap);
+      }
     }
 
 
