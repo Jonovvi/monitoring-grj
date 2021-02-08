@@ -25,7 +25,7 @@ class MonitoringController extends Controller
         //   'tanggal' => 1,
         //   'jam' => 1
         // ]);
-        $yap = "ADA ORANG";
+        $yap = "adaorang";
         return response()->json($yap);
       } else {
         // code...
