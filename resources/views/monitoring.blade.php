@@ -25,7 +25,7 @@
                   <p></p>
                   <p id="waktu"></p>
                   <p id="jam"></p>
-                  <input type="text" name="hm" id="hm" value="{{Request::get('a')}}">
+                  <input type="text" name="hm" id="hm" value="{{Request::get('x')}}">
               </div>
         </div>
       </section>
