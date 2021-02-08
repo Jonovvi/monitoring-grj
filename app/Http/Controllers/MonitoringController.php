@@ -13,25 +13,26 @@ class MonitoringController extends Controller
     }
 
 
-    public function data(Request $req)
+    public function data(Request $req, $x)
     {
 
       $x=$req->get('x');
-      if ($x==1) {
-        // code...
-        // $yap = Kursi::update(['id',1],[
-        //   'data' =>$y,
-        //   'waktu' => 1,
-        //   'tanggal' => 1,
-        //   'jam' => 1
-        // ]);
-        $yap = "adaorang";
-        return response()->json($yap);
-      } else {
-        // code...
-        $yap = "kosong";
-        return response()->json($yap);
-      }
+      return response()->json($req->get('x'));
+      // if ($x==1) {
+      //   // code...
+      //   // $yap = Kursi::update(['id',1],[
+      //   //   'data' =>$y,
+      //   //   'waktu' => 1,
+      //   //   'tanggal' => 1,
+      //   //   'jam' => 1
+      //   // ]);
+      //   $yap = "adaorang";
+      //   return response()->json($yap);
+      // } else {
+      //   // code...
+      //   $yap = "kosong";
+      //   return response()->json($yap);
+      // }
     }
 
 
