@@ -17,7 +17,7 @@ class MonitoringController extends Controller
     {
 
       // $x=$req->get('x');
-      return response()->json($req->get(['x']));
+      return response()->json($req->get('x'));
       // if ($x==1) {
       //   // code...
       //   // $yap = Kursi::update(['id',1],[
