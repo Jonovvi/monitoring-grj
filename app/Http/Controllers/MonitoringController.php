@@ -28,7 +28,7 @@ class MonitoringController extends Controller
           'jam' => 1
         ]);
 
-        return response()->json($yap);
+        return response()->json($x);
       } else {
         // code...
         $yap = "ada";
