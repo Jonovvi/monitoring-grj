@@ -47,7 +47,7 @@ $('document').ready(function () {
 
    $.ajax({
             type:'get',
-            url:'http://monitoringgrj.top/monitoring'+a,
+            url:'/monitoring/x',
             dataType: "json",
             success:function(response){
               if (response=="0") {
