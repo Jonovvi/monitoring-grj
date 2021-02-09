@@ -62,6 +62,7 @@
                             <li><a href="#">Jadwal Ibadah</a></li>
                             <li><a href="#">Laporan Kegiatan</a></li>
                         </ul>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -79,9 +80,12 @@
                 <div class="col-lg-3 col-md-5 col-sm-8">
                     <div class="footer-newsleter mt-45">
                         <div class="f-title">
-                            <h4 class="title">Newsleter</h4>
+                            <h4 class="title">GSJA Getsemani</h4>
                         </div>
-                        <p class="mt-15">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+                        <p class="mt-15">Gereja Sidang Jemaat Allah
+                                        disahkan pada tanggal 10 Februari 1951
+                                        dengan badan hukum nomor Y.A. 8/11/16.
+                                        Gereja Sidang Jemaat Allah merupakan bagian dari Persekutuan Assemblies of God in the World ( WAGF ) yang adalah denominasi Pentakosta terbesar di dunia atau dikenal dengan "AG"</p>
                         <form action="#">
                             <div class="newsleter mt-20">
                                 <input type="email" placeholder="info@contact.com">

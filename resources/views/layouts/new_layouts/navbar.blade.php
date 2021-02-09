@@ -105,13 +105,13 @@
                                         <a class="page-scroll" href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#about">About</a>
+                                        <a class="page-scroll" href="#about">Renungan</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#service">Jadwal Ibadah</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Pendeta Gereja</a>
+                                        <a class="page-scroll" href="#team">Laporan Kegiatan Gereja</a>
                                     </li>
                                     @auth
                                     <li class="nav-item">
