@@ -8,7 +8,7 @@ class MonitoringController extends Controller
 {
     public function index(Request $req)
     {
-      $x = $request->input('x');
+      $x = $req->input('x');
       $kursiku = Kursi::where('id',1)->first();
       return view('monitoring', compact('kursiku','x'));
     }
