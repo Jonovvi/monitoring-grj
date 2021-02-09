@@ -42,8 +42,7 @@ $('document').ready(function () {
  });
 
  function getRealData() {
-   var a=document.getElementById("hm").value;
-   console.log(a);
+
 
    $.ajax({
             type:'get',
