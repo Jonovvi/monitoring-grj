@@ -25,7 +25,7 @@
                   <p></p>
                   <p id="waktu"></p>
                   <p id="jam"></p>
-                  <input type="text" name="hm" id="hm" value="{{$x}}">
+                  <!-- <input type="text" name="hm" id="hm" value="{{$x}}"> -->
               </div>
         </div>
       </section>
@@ -44,35 +44,27 @@ $('document').ready(function () {
  function getRealData() {
    var a=document.getElementById("hm").value;
    console.log(a);
-   if (a==1) {
-     var img = document.getElementById("kursi7");
-                   img.src="{{asset('/assets/images/kursi_booked.jpg')}}";
-                   document.getElementById('lokasi'+1).innerHTML=("ADA ORANG");
-   } else {
-     var img = document.getElementById("kursi7");
-                    img.src="{{asset('/assets/images/kursi.jpg')}}";
-                    document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
-   }
-   // $.ajax({
-   //          type:'get',
-   //          url:'http://monitoringgrj.top/monitoring'+a,
-   //          dataType: "json",
-   //          success:function(response){
-   //            if (response=="0") {
-   //
-   //               var img = document.getElementById("kursi7");
-   //               img.src="{{asset('/assets/images/kursi.jpg')}}";
-   //               document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
-   //               console.log(response);
-   //            }else {
-   //              // location.reload();
-   //              var img = document.getElementById("kursi7");
-   //              img.src="{{asset('/assets/images/kursi_booked.jpg')}}";
-   //              document.getElementById('lokasi'+1).innerHTML=("ADA ORANG");
-   //              console.log(response);
-   //            }
-   //          }
-   //          });
+
+   $.ajax({
+            type:'get',
+            url:'http://monitoringgrj.top/monitoring'+a,
+            dataType: "json",
+            success:function(response){
+              if (response=="0") {
+
+                 var img = document.getElementById("kursi7");
+                 img.src="{{asset('/assets/images/kursi.jpg')}}";
+                 document.getElementById('lokasi'+1).innerHTML=("TIDAK ADA ORANG");
+                 console.log(response);
+              }else {
+                // location.reload();
+                var img = document.getElementById("kursi7");
+                img.src="{{asset('/assets/images/kursi_booked.jpg')}}";
+                document.getElementById('lokasi'+1).innerHTML=("ADA ORANG");
+                console.log(response);
+              }
+            }
+            });
  }
 </script>
 

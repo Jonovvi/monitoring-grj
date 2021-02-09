@@ -17,18 +17,17 @@ class MonitoringController extends Controller
     public function data(Request $req, $x)
     {
 
-      // $x=$req->get('x');
-      $y=$req->hm;
+      $x=$req->get('x');
 
-      if ($y == 1) {
-        // code...
-        // $yap = Kursi::update(['id',1],[
-        //   'data' =>$y,
-        //   'waktu' => 1,
-        //   'tanggal' => 1,
-        //   'jam' => 1
-        // ]);
-        $yap = "adaorang";
+      if ($x == 1) {
+
+        $yap = Kursi::update(['id',1],[
+          'data' =>$y,
+          'waktu' => 1,
+          'tanggal' => 1,
+          'jam' => 1
+        ]);
+
         return response()->json($yap);
       } else {
         // code...
