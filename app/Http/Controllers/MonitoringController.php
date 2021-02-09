@@ -19,7 +19,7 @@ class MonitoringController extends Controller
 
       $x=$req->get('x');
 
-      if ($x == 1) {
+      if ($x == 0) {
 
         $yap = Kursi::update(['id',1],[
           'data' =>$y,
@@ -31,7 +31,7 @@ class MonitoringController extends Controller
         return response()->json($yap);
       } else {
         // code...
-        $yap = "kosong";
+        $yap = "ada";
         return response()->json($yap);
       }
     }
