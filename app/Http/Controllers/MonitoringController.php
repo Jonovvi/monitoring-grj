@@ -21,8 +21,8 @@ class MonitoringController extends Controller
 
       if ($x == 0) {
 
-        $yap = Kursi::update(['id',1],[
-          'data' =>$y,
+        $yap = Kursi::create([
+          'data' =>$x,
           'waktu' => 1,
           'tanggal' => 1,
           'jam' => 1
