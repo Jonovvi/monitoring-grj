@@ -17,7 +17,7 @@ class MonitoringController extends Controller
     public function data(Request $req, $x)
     {
 
-      $x=$req->get('x');
+      $x=$req->input('x');
 
       if ($x == 0) {
 
